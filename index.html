@@ -6,25 +6,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
 <style>
-    @media (max-width:570px)  {
-    
-      #list{
-      color: blue;
-      font-size: 12px;
-      /* text-decoration: underline; */
-    }
-      
-    }
+   
+   #headShot2
+   {
+    display: none;
+   }
+
+   .projTitle{
+    font-weight: bold;
+   }
     
     #main {
         margin-bottom: 100px;
     }
-    #me {
-        height: 1000px;
+
+    #fields
+    {
+      display: none;
+    }
+
+    #me 
+    {
+        /* height: 1000px;
         max-width: 100%;
         width: 1500px;
-        
+     */
+      /*height: 600px;
+        max-width: 100%;
+        width: 500px; */ 
+        width: 100%;
+        /* height: 500px; */
+        height: auto;
     }
+
     #headShot {
         height: 400px;
         border-radius: 50%;
@@ -56,6 +70,158 @@
       font-size: 25px;
       /* text-decoration: underline; */
     }
+
+    @media (max-width:850px)  {
+      #headShot {
+        height: 300px;
+        border-radius: 50%;
+
+    }
+  }
+
+    @media (max-width:750px)  {
+      #headShot {
+        height: 300px;
+        border-radius: 50%;
+
+    }
+
+    .projTitle{
+      font-size:xx-large;
+      
+    }
+  }
+
+    @media (max-width:680px)  {
+      #headShot {
+        height: 200px;
+        border-radius: 50%;
+
+    }
+    
+
+    }
+    @media (max-width:570px)  {
+    
+    #list{
+    color: blue;
+    font-size: 12px;
+    /* text-decoration: underline; */
+    }
+    
+
+    #phone{
+      font-size: 12px;
+    }
+
+    #headShot {
+        height: 90px;
+        border-radius: 50%;
+
+    }
+    .projTitle{
+      font-size:x-large;
+      
+    }
+
+    
+  }
+
+  @media (max-width:470px)  {
+    #researchPaper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+        }
+
+    #skillList{
+      font-size: 12px;
+    }
+
+    #headShot{
+      opacity: 0;
+      display: none;
+       }
+
+    #headShot2{
+      display: block;
+      opacity: 1;
+      border-radius: 50%;
+      height: auto;
+      width: auto;
+       }
+
+      #fields{
+        display: block;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      }
+
+      .projTitle{
+      font-size:large;
+      
+    }
+  
+    
+  }
+  
+  @media (max-width:390px)  {
+
+    #githubLink{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    #main{
+      padding-top:50px;
+    }
+
+    .projTitle{
+      font-size:medium;
+      
+    }
+    
+
+  
+    
+  }
+
+  @media (max-width:370px)  {
+    
+    #list{
+    color: blue;
+    font-size: 10px;
+    /* text-decoration: underline; */
+  }
+  #githubLink{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+    }
+
+
+  #phone{
+    font-size: 10px;
+  }
+
+  .projTitle{
+      font-size:medium;
+      
+    }
+    
+  }
+
+  /* #develop{
+    position: absolute;
+    margin-left: 75%;
+    color: red;
+  } */
 </style>
 </head>
 <body>
@@ -63,16 +229,21 @@
 <!-- Header -->
 <header id="title"class="w3-display-container w3-content w3-center" style="max-width:1500px">
   <img id="me" class="w3-image" src="WhatsApp Image 2023-01-10 at 12.34.28 (6).jpeg" alt="Me" >
+  <!-- <h4 id="develop">Website Developed by Myself</h4> -->
+
+
   <div id = "main" class="w3-display-bottommiddle w3-padding-large w3-border w3-wide w3-text-white w3-center">
     <img id="headShot" class="w3-image" src="WhatsApp Image 2023-01-10 at 12.34.28 (3).jpeg" alt="Me">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Matthew Jarrams</h1>
-    <h5 class="w3-hide-large" style="white-space:nowrap">Matthew Jarrams</h5>
-    <h3 class="w3-hide-medium w3-hide-small">Computer Scientist and Data Analyst</h3>
-    <span>
+    <h5 id="name" class="w3-hide-large" style="white-space:nowrap">Matthew Jarrams</h5>
+    <h3 class="w3-hide-medium w3-hide-small w3-xxlarge">Computer Scientist and Data Analyst</h3>
+    <span id="skillList">
         <a target="_blank" href="https://github.com/matthewJarrams" class="w3-bar-item w3-button">Github</a>
         <a target="_blank" href="https://www.linkedin.com/in/matthew-jarrams-496975208/" class="w3-bar-item w3-button">LinkedIn</a>
     </span>
+    
   </div>
+  
   
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
@@ -81,7 +252,9 @@
     <a href="#aboutMe" class="w3-bar-item w3-button">About Me</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
   </div>
+  
 </header>
+
 
 <!-- Navbar on small screens -->
 <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
@@ -96,10 +269,16 @@
 <br>
 <br>
 
+<img id="headShot2" class="w3-image" src="WhatsApp Image 2023-01-10 at 12.34.28 (3).jpeg" alt="Me">
+<h3 id="fields" class="w3-medium">Computer Scientist and Data Analyst</h3>
+
+
+
+
 <div class="w3-content w3-padding-large w3-margin-top" id="aboutMe">
 
   <div class="w3-padding-large w3-border w3-wide w3-text-black w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">About Me</h1>
+    <h1 class="w3-xxxlarge">About Me</h1>
     <p>I am currently finishing my last semester at the University of Calgary for a Computer Science Degree.
       My academic and professional interests are in the Data Analyis, Software Development and GIS fields.
       <br>
@@ -121,13 +300,13 @@
 
   <img src="Screenshot 2023-01-10 132918.png" alt="Ocean" class="w3-image" width="1000" height="500">
   <div class="w3-padding-large w3-border w3-wide w3-text-black w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Soccer Match Data Analyis Medium Article</h1>
+    <h1 class ="projTitle" >Soccer Match Data Analyis Medium Article</h1>
     <h5 id="skills" class="w3-large" style="white-space:nowrap">Description</h5>
     <p>Analysis of soccer match data to see how well betting odds predicted match outcomes, how comparable were games in different countries 
       and could this be predicted using an ML algorithm and lastly looking at the effectiveness of particular styles of play.
     </p>
     <h5 id="skills"class="w3-large-black" style="white-space:nowrap">Skills</h5>
-    <span>
+    <span id="skillList">
         Machine Learning, Regression Techniques, PCA, Data Transformation/Cleaning
     </span>
     <br>
@@ -142,20 +321,20 @@
 
     <img src="Screenshot 2023-01-10 133520.png" alt="Ocean" class="w3-image" width="1000" height="500">
     <div class="w3-padding-large w3-border w3-wide w3-text-black w3-center">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Network Science Research Project</h1>
+      <h1 class ="projTitle" >Network Science Research Project</h1>
       <h5 id="skills" class="w3-large" style="white-space:nowrap">Description</h5>
       <p>A colleague and I created a network of soccer players connecting them to every player they had played with by web scraping player 
         histories and then applying multiple network analysis techniques to uncover the driving
         forces behind the football world as well as interesting properties about our network. Project code could be adapted to be used for another sport.
       </p>
       <h5 id="skills"class="w3-large-black" style="white-space:nowrap">Skills</h5>
-      <span>
+      <span id="skillList">
           Webscraping, Machine Learning, Generative Model Creation, Network Construction
       </span>
       <br>
       <br>
       <span>
-        <a style="text-decoration: underline;" target="_blank" href="CPSC_572__Football_Network_Research_Paper (3).pdf" class="w3-bar-item w3-button">Research Paper Link</a>
+        <a id="researchPaper"style="text-decoration: underline;" target="_blank" href="CPSC_572__Football_Network_Research_Paper (3).pdf" class="w3-bar-item w3-button">Research Paper Link</a>
       </span>
     </div>
     <br>
@@ -170,7 +349,7 @@
     </video> -->
   </div>
     <div class="w3-padding-large w3-border w3-wide w3-text-black w3-center">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">PetFinder- a MERN Stack Project</h1>
+      <h1 class ="projTitle">PetFinder- a MERN Stack Project</h1>
       <h5 id="skills" class="w3-large" style="white-space:nowrap">Description</h5>
       <p>
         Four colleagues and I developed a MERN stack project to give community members the opportunity to post about lost pets 
@@ -178,13 +357,13 @@
         were working with the back-end (Database and Node/Express) although I was involved in a large portion of front-end development.
       </p>
       <h5 id="skills"class="w3-large-black" style="white-space:nowrap">Skills</h5>
-      <span>
+      <span id="skillList">
           Node.js, React.js, MongoDB, Project Management, Software Team Development
       </span>
       <br>
       <br>
       <span>
-          <a style="text-decoration: underline;" target="_blank" href="https://github.com/matthewJarrams/Pet-Finder" class="w3-bar-item w3-button">GitHub Link</a>
+          <a id="githubLink" style="text-decoration: underline;" target="_blank" href="https://github.com/matthewJarrams/Pet-Finder" class="w3-bar-item w3-button">GitHub Link</a>
       </span>
     </div>
 
@@ -197,7 +376,7 @@
       <iframe width="600" height="400" src="https://www.youtube.com/embed/mpnBLRPdJBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
       <div class="w3-padding-large w3-border w3-wide w3-text-black w3-center">
-        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">TrackStar - Interface Design Project</h1>
+        <h1 class="projTitle">TrackStar - Interface Design Project</h1>
         <h5 id="skills" class="w3-large" style="white-space:nowrap">Description</h5>
         <p>
           Four colleagues and I developed a C# application with the predominant focus on interface design. Specifically, using the 
@@ -206,7 +385,7 @@
           interface design along with how to best deal with certain tradeoffs. This project helped change my perspective on front-end design development.
         </p>
         <h5 id="skills"class="w3-large-black" style="white-space:nowrap">Skills</h5>
-        <span>
+        <span id="skillList">
           TCDS, Interface Design/Evaluation, C#, XAML, WPF
         </span>
       </div>
@@ -220,20 +399,20 @@
 
         <img src="Screenshot 2023-01-11 190812.png" alt="Ocean" class="w3-image" width="1000" height="500">
         <div class="w3-padding-large w3-border w3-wide w3-text-black w3-center">
-          <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Course Reviewer - An SQL Database Application</h1>
+          <h1 class ="projTitle">Course Reviewer - An SQL Database Application</h1>
           <h5 id="skills" class="w3-large" style="white-space:nowrap">Description</h5>
-          <p>A group project three of us designed and developed an SQL relational database 
+          <p>A group project where three of us designed and developed an SQL relational database 
             for students to review classes, classrooms and clubs at a university. 
             The application's front-end was created using PHP, HTML and CSS. 
           </p>
           <h5 id="skills"class="w3-large-black" style="white-space:nowrap">Skills</h5>
-          <span>
+          <span id="skillList">
               PHP, SQL, Database Design, Rigourous Documentation of Design Process 
           </span>
           <br>
           <br>
           <span>
-              <a style="text-decoration: underline;" target="_blank" href="https://github.com/matthewJarrams/Course-Reviewer-Database-Application" class="w3-bar-item w3-button">GitHub Link</a>
+              <a id="githubLink" style="text-decoration: underline;" target="_blank" href="https://github.com/matthewJarrams/Course-Reviewer-Database-Application" class="w3-bar-item w3-button">GitHub Link</a>
           </span>
         </div>
         <br>
